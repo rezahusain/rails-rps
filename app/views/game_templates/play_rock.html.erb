@@ -1,0 +1,11 @@
+<h1>We played rock!</h1>
+<h1>They played <%=@random_move%>!</h1>
+
+<%if @random_move == "scissors"%>
+  <h1> We won! </h1>
+<%elsif @random_move == "paper"%>
+  <h1> We lost! </h1>
+<%else%>
+  <h1> We tied! </h1>
+<%end%>
+<a href = "/">Rules</a>
